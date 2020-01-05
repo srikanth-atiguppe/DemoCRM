@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+<listeners>
+	<listener class-name="com.retestfreecrm.ExtentReporterListner.ExtentReporterNG" />
+</listeners>
+
+  <test thread-count="5" name="Tests">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <!--  <class name="com.retestfreecrm.test.LoginTest1"/> -->
+       <class name="com.retestfreecrm.test.ContactTest"/> 
+      </classes>
+  </test> <!-- Tests -->
+</suite> <!-- RegressionSuite -->
+  
